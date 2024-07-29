@@ -1,4 +1,4 @@
-# CapstoneProjectForrecommendation
+# CapstoneProjectForRecommendation
 
 Two solution for encoding and decoding the email
 - Trying to calculate the loss and fitting the model. Later evaluating the model.
