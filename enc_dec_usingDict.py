@@ -14,7 +14,7 @@ def email_to_uuid(email):
   """
     return str(uuid.uuid3(uuid.NAMESPACE_DNS, email))
 
-def process_csv(input_file, output_file):
+def encode(input_file, output_file):
     """Processes a CSV file, converts emails to UUIDs, and writes results to another CSV.
 
   Args:
@@ -34,13 +34,9 @@ def process_csv(input_file, output_file):
 
 
 # Example usage
-input_file = '../classwork/user_email_prefs.csv'
-output_file = '../classwork/out_useremail_prefs.csv'
-process_csv(input_file, output_file)
-
-
-
-
+input_file = 'user_email_prefs.csv'
+output_file = 'out_user_email_prefs.csv'
+encode(input_file, output_file)
 
 email_uuid_map = {}
 
@@ -60,7 +56,7 @@ def uuid_to_email(uuid_str):
 
 
 # Example usage
-email = "prasanna@vmware.com"
+email = "pankajta@vmware.com"
 store_email_uuid_mapping(email)
 uuid_value = email_uuid_map[email]
 print(uuid_value)
